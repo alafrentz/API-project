@@ -27,26 +27,37 @@ function fetchResults(e) {
         .then(function (json) {
             console.log(json);
             displayResults(json);
-            
         })
     }
+    
     function displayResults(json) {
         
-
+        
         // console.log('Display Results', json);
         // console.log(json.response.docs);
-       // console.log(json.results[0].city)
+        // console.log(json.results[0].city)
         //console.log(json.results[0].country)
         let results = json.results
         //console.log(results)
         for (var e = 0 ; e < results.length; e++){
-        console.log(results[e])
-        }
-    }
 
+            
+            console.log(results[e])
+            
+            
+            
+            function getRandomInt() {
+                return Math.floor((Math.random() * 100) + 1);
+            }
+            getRandomInt()
+            
+            let x = getRandomInt();
+            console.log(x);
+            
     
+    } 
+ }
 
-   
 
     ///for loop
 
